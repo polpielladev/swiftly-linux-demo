@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": ["swift"],
+      "name": "Debug GitHookExecutable",
+      "program": "${workspaceFolder:GitHookExecutable}/.build/debug/GitHookExecutable",
+      "args": [],
+      "cwd": "${workspaceFolder:GitHookExecutable}",
+      "preLaunchTask": "swift: Build Debug GitHookExecutable"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": ["swift"],
+      "name": "Release GitHookExecutable",
+      "program": "${workspaceFolder:GitHookExecutable}/.build/release/GitHookExecutable",
+      "args": [],
+      "cwd": "${workspaceFolder:GitHookExecutable}",
+      "preLaunchTask": "swift: Build Release GitHookExecutable"
+    }
+  ]
+}

@@ -11,6 +11,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Install swiftly
+      shell: bash
       run: curl -L https://swift-server.github.io/swiftly/swiftly-install.sh | bash
     - name: Install swiftly
       run: swiftly install latest

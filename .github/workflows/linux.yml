@@ -13,7 +13,7 @@ jobs:
     - name: Install swiftly
       shell: bash
       run: curl -L https://swift-server.github.io/swiftly/swiftly-install.sh | bash -s -- -y
-    - name: Install swiftly
+    - name: Install the latest Swift toolchain
       run: swiftly install latest
     - name: Build and run tests
       run: swift build

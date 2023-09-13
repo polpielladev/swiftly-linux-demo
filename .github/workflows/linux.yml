@@ -12,7 +12,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Install swiftly
       shell: bash
-      run: curl -L https://swift-server.github.io/swiftly/swiftly-install.sh | bash
+      run: curl -L https://swift-server.github.io/swiftly/swiftly-install.sh | bash -s -y
     - name: Install swiftly
       run: swiftly install latest
     - name: Build and run tests
